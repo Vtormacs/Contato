@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contatos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+        }
+
+        .profile-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-name {
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-description {
+            color: #6c757d;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .contact-btn {
+            background-color: #2D2D2D;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.15rem; 
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            border-radius: 8px;
+            padding: 0.4rem 1rem; 
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+
+        /* Efeito de hover (passar o mouse) */
+        .contact-btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="data:image/jpeg;base64,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" alt="Sua Foto" class="profile-pic">
+
+        <h1 class="h4 profile-name">Seu Nome</h1>
+        <p class="profile-description">
+            Breve descrição sobre você, seu trabalho ou como as pessoas podem interagir com você através dos links abaixo.
+        </p>
+
+        <div class="d-flex flex-column align-items-center">
+            <a href="https://wa.me/seunumerodecelular" target="_blank" class="contact-btn">WhatsApp</a>
+            <a href="#" class="contact-btn">Instagram</a>
+            <a href="#" class="contact-btn">LinkedIn</a>
+            <a href="#" class="contact-btn">E-mail</a>
+        </div>
+    </div>
+
+</body>
+</html>
